@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VYA KOCHI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+        <nav>
+        <div class="logo">
+                vya kerala
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">home</a>
+                </li>
+                <li>
+                    <a href="#">units</a>
+                </li>
+              
+                 <li>
+                    <a href="gallery.html">gallery
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html"><b><em>community</em></b></a>
+                </li>
+                <li>
+                    <a href="#contact">contact</a>
+                </li>
+
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <div class="login" style="padding-top: 8vh;">
+
+            <form action="action_page.php" method="post">
+                <div class="imgcontainer">
+                  <img src="images/vya.jpg" alt="Avatar" class="avatar" style="width:250px; height:250px;">
+                </div>
+              
+                <div class="container">
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter email" name="email" required><br>
+              
+                  <label for="pass"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="pass" required><br>
+              
+                  <button type="submit">Login</button>
+                  
+                </div>
+              
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" class="cancelbtn">Cancel</button>
+                  <span class="psw">create<a href="signup.html">account</a></span>
+                </div>
+              </form>
+
+        </div>
+
+
+        <script src="app.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDIRyOtA71ZlZE_gmF7y5ZwcqJTdCdwegc",
+    authDomain: "vyakochi.firebaseapp.com",
+    databaseURL: "https://vyakochi.firebaseio.com",
+    projectId: "vyakochi",
+    storageBucket: "vyakochi.appspot.com",
+    messagingSenderId: "392741758753",
+    appId: "1:392741758753:web:4c3469b5e0fef21ed08060",
+    measurementId: "G-717SNBHDLG"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>   
+
+    </body>
+    </html>

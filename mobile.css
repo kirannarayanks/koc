@@ -41,7 +41,7 @@
     }
     .about
     {
-        overflow: scroll;
+        height: 100vh;
     }
     .blood
     {
