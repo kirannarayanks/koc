@@ -48,7 +48,7 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
     }
     else{
         console.log('not an user');
-        location.href = 'index.html';
+       // location.href = 'index.html';
         //window.alert('not an user')
     }
 
