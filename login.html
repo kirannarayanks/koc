@@ -7,7 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
 
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase.js"></script>
     <style>
         form {
   border: 3px solid #f1f1f1;
@@ -114,55 +121,34 @@ span.psw {
         </nav>
         <div class="login" style="padding-top: 8vh;">
 
-            <form action="action_page.php" method="post">
                 <div class="imgcontainer">
                   <img src="images/vya.jpg" alt="Avatar" class="avatar" style="width:250px; height:250px;">
                 </div>
               
                 <div class="container">
                   <label for="email"><b>Email</b></label>
-                  <input type="text" placeholder="Enter email" name="email" required><br>
+                  <input type="text" id="txtemail" placeholder="Enter email" name="email" required><br>
               
                   <label for="pass"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="pass" required><br>
+                  <input type="password" id="txtpass" placeholder="Enter Password" name="pass" required><br>
               
-                  <button type="submit">Login</button>
+                  <button type="submit" id="btnlogin">Login</button>
                   
                 </div>
               
                 <div class="container" style="background-color:#f1f1f1">
-                  <button type="button" class="cancelbtn">Cancel</button>
+                  <button type="button" id="btnlogout" class="cancelbtn">logout</button>
                   <span class="psw">create<a href="signup.html">account</a></span>
                 </div>
-              </form>
+              
 
         </div>
 
 
         <script src="app.js"></script>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDIRyOtA71ZlZE_gmF7y5ZwcqJTdCdwegc",
-    authDomain: "vyakochi.firebaseapp.com",
-    databaseURL: "https://vyakochi.firebaseio.com",
-    projectId: "vyakochi",
-    storageBucket: "vyakochi.appspot.com",
-    messagingSenderId: "392741758753",
-    appId: "1:392741758753:web:4c3469b5e0fef21ed08060",
-    measurementId: "G-717SNBHDLG"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>   
+<script src="login.js"></script> 
 
     </body>
     </html>
