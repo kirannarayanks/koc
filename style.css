@@ -4,6 +4,39 @@
     padding-top: 0;
     box-sizing: border-box;
     font-family: 'MuseoModerno', cursive;
+    
+}
+.preloader
+{
+    margin: 0;
+    padding: 15em;
+    padding-left: 36em;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+
+}
+.preloader .loader {
+    border: 16px solid rgb(0, 0, 0);
+  border-bottom: 16px solid #ff3300;
+  border-top: 16px solid #ff3300;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+
+}
+.preload-finish
+{
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 nav
 {
@@ -11,11 +44,13 @@ nav
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    min-height: 8vh;
+    height: 8vh;
     background-color: #ff7300;
     font-family: Georgia, 'Times New Roman', Times, serif;
     z-index: 1;
     position: fixed;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 .logo
 {
@@ -23,6 +58,21 @@ nav
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 22px;
+    margin: 0.5em;
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.logo p{
+  margin-top: 0.2em;
+}
+.logo img
+{
+  margin-right: 0.5em;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
 }
 .nav-links
 {
@@ -74,11 +124,12 @@ nav
     background-color: rgb(255, 255, 255);
     margin: 5px;
     transition: all 0.3s ease;
+    border-radius: 55%;
 }
 .slideshow-container {
     padding-top: 8vh;
     background-color: antiquewhite;
-    max-width: 1000px;
+    max-width: 100%;
     position: relative;
     margin: auto;
   }
@@ -186,26 +237,175 @@ nav
   padding-left: 2em;
   padding-right:2em ;
 }
-div.gallery {
+/*gallery*/
+/* Position the image container (needed to position the left and right arrows) */
+.gallery {
+  position: absolute;
   margin-top: 8vh;
-
-border: 1px solid #ccc;
-float: left;
-width: 180px;
 }
 
-div.gallery:hover {
-border: 1px solid #777;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-div.gallery img {
-width: 100%;
-height: auto;
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
 }
 
-div.desc {
-padding: 15px;
-text-align: center;
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.gal:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.img {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/*end of gallery*/
+
+/*contact form*/
+.contact
+{
+  position: absolute;
+  margin-top: 8vh;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 150vh;
+  color: #fff;
+  text-align: center;
+  
+}
+.contact form,.contact input{
+  width: 50%;
+  text-align: center;
+  color: #ff7300;
+  background: transparent;
+}
+.contact input[type=text],input[type=email],input[type=tel], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background: transparent;
+  color: #ccc;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+input[type=submit]:hover {
+  background-color: #e65319;
+}
+
+/* Style the container/contact section */
+/*.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}*/
+
+.row{
+  display: inline-block;
+}
+.details
+{padding-top: 0em;
+  width:100%;
+  
+  text-align: left;
+  
+
+}
+/* Create two columns that float next to eachother */
+.column {
+  
+  width: 100%;
+  margin-top: 6px;
+  padding: 20px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

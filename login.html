@@ -16,6 +16,9 @@
         <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase.js"></script>
     <style>
+      body{
+        background-color: bisque;
+      }
         form {
   border: 3px solid #f1f1f1;
 }
@@ -25,14 +28,17 @@ input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
+  display: flex;
+  /*border-bottom: 1px solid #ccc;*/
+  border: none;
   box-sizing: border-box;
+  box-shadow: rgb(102, 101, 101) ;
+  
 }
 
 /* Set a style for all buttons */
 button {
-  background-color: #4CAF50;
+  background-color: rgb(223, 165, 41);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -91,14 +97,14 @@ span.psw {
 <body>
         <nav>
         <div class="logo">
-                vya kochi
+          <img src="images/vya.jpg" alt=""><p>vya kochi</p>
             </div>
             <ul class="nav-links">
                 <li>
-                    <a href="index.html">home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="#">units</a>
+                    <a href="#">Downloads</a>
                 </li>
               
                  <li>
@@ -109,7 +115,7 @@ span.psw {
                     <a href="login.html"><b><em>community</em></b></a>
                 </li>
                 <li>
-                    <a href="#contact">contact</a>
+                    <a href="contact.html">contact</a>
                 </li>
 
             </ul>
@@ -138,7 +144,7 @@ span.psw {
               
                 <div class="container" style="background-color:#f1f1f1">
                   <button type="button" id="btnlogout" class="cancelbtn">logout</button>
-                  <span class="psw">create<a href="signup.html">account</a></span>
+                  <!--<span class="psw">create<a href="signup.html">account</a></span>-->
                 </div>
               
 
@@ -149,6 +155,7 @@ span.psw {
 
 
 <script src="login.js"></script> 
+ 
 
     </body>
     </html>

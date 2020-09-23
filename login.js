@@ -37,6 +37,7 @@ var firebaseConfig = {
 
 btnlogout.addEventListener('click', e =>{
     firebase.auth().signOut();
+    window.alert('logged out')
 })
 
 firebase.auth().onAuthStateChanged(firebaseUser => {
@@ -47,8 +48,7 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
         //location.href = 'login.html';
     }
     else{
-        console.log('not an user');
-       // location.href = 'index.html';
+        console.log('not an user')
         //window.alert('not an user')
     }
 

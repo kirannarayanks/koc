@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body >
+    <nav>
+        <div class="logo">
+               <img src="images/vya.jpg" alt=""> <p>vya kochi</p>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Downloads</a>
+                </li>
+              
+                 <li>
+                    <a href="gallery.html">Gallery
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">Community</a>
+                </li>
+                <li>
+                    <a href="contact.html"><b><em>Contact</em></b></a>
+                </li>
+
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+
+        <div class="contact">
+            <div class=".details">
+              <h2>Contact Us</h2>
+              
+            </div>
+            <div class="row">
+                <div class="details">
+                    <p><i class="fas fa-map-marker-alt" style="color: orangered;"></i>&nbsp;ammankovil road,amaravathy,682001</p><br>
+                    <p><i class="fas fa-envelope" style="color:orangered"></i>&nbsp;vyakochi68@gmail.com</p>
+                    <p><i class="fab fa-facebook" style="margin: 2em;color: orangered;font-size:24px;cursor: pointer;"></i>
+                            <i class="fab fa-instagram" style="cursor:pointer;margin: 2em;color: orangered;font-size:24px;"></i></p>
+                </div>
+                <p style="color: orangered;"><b><em>leave us a message</em></b> </p>
+                <div class="column">
+                    <form id="gform" action="">
+                      <Name for="fname">Name</label>
+                      <input type="text" id="fname" name="name" placeholder="Your name.."><br>
+                      <label for="email">email</label>
+                      <input type="email" id="email" name="email" placeholder="Your email"><br>
+                      <label for="contact">contact number</label>
+                     <input type="tel" id="mob" name="contact" placeholder="your contact number"><br>
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+              
+              </div>
+             
+            </div>
+          </div>
+
+
+
+          
+        <script src="app.js"></script>
+        <script src="https://kit.fontawesome.com/fbeaf8d9ec.js" crossorigin="anonymous"></script>
+        <script>
+            $("#gform").submit((e)=>{
+                e.preventDefault()
+                $.ajax({
+                    url:"https://script.google.com/macros/s/AKfycbwrAhXKPOgsi1EUlrGComZOdIgWHLYEY1Ghf2C0sed-XSVesZ-P/exec",
+                    data:$("#gform").serialize(),
+                    method:"post",
+                    success:function (response){
+                        alert("Form submitted successfully")
+                        window.location.reload()
+                        //window.location.href="https://google.com"
+                    },
+                    error:function (err){
+                        alert("Something Error")
+        
+                    }
+                })
+            })
+        </script>
+    
+</body>
+</html>
