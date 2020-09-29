@@ -31,7 +31,7 @@
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: rgba(16, 24, 29, 0.83);
+        background-color: #ff7300;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -45,7 +45,7 @@
     }
     .nav-links li a
     {
-        color:rgb(255, 115, 0) ;
+        color:rgb(250, 248, 246) ;
     }
     
     .burger

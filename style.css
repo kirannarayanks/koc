@@ -19,6 +19,9 @@
 
 }
 .preloader .loader {
+  color: #ff3300;
+  text-align: center;
+  padding-top: 2rem;
     border: 16px solid rgb(0, 0, 0);
   border-bottom: 16px solid #ff3300;
   border-top: 16px solid #ff3300;
@@ -79,6 +82,7 @@ nav
     display: flex;
     justify-content: space-around;
     width: 60%;
+    padding-top: 1rem;
 }
 .nav-links li
 {
@@ -126,6 +130,8 @@ nav
     transition: all 0.3s ease;
     border-radius: 55%;
 }
+
+/*image carousel*/
 .slideshow-container {
     padding-top: 8vh;
     background-color: antiquewhite;
