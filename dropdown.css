@@ -10,10 +10,11 @@
     background-color: #ff7300;
     color: white;
     text-align: center;
+    margin: 0;
     padding-top: 0px;
     font-size: 20px;
     border: none;
-    max-height: 8vh;
+    max-height: 5vh;
   }
   
   /* The container <div> - needed to position the dropdown content */
@@ -30,7 +31,7 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    transform: translateX(-2em);
+    transform: translateX(-1.5em);
   }
   
   /* Links inside the dropdown */

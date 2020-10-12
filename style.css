@@ -67,11 +67,17 @@ nav
     justify-content: flex-start;
     
 }
-.logo p{
-  margin-top: 0.2em;
+.logo a
+{
+  text-decoration: none;
+  color: white;
+  margin-top: 1.5vh;
+  text-align: center;
+
 }
 .logo img
 {
+  margin-top: .3vh;
   margin-right: 0.5em;
   width: 2em;
   height: 2em;
@@ -82,7 +88,7 @@ nav
     display: flex;
     justify-content: space-around;
     width: 60%;
-    padding-top: 1rem;
+    padding-top: 1vh;
 }
 .nav-links li
 {

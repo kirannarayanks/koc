@@ -24,6 +24,9 @@
         padding: 15em;
     padding-left: 8em;
     }
+    .logo img{
+        margin-top: 0;
+    }
     
     .nav-links
     {
