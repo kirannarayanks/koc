@@ -1,0 +1,111 @@
+.contact-container{
+    width: 100%;
+    height: auto;
+    padding-top: 8vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.form-group{
+    width: 50%;
+    height: 92vh;
+    background: #6a0883;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+form{
+    margin-top: 4vh;
+    padding-left: 2vw;
+    width: 70%;
+    height: 85vh;
+    position: absolute;
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 16px #000,
+    -5px -5px 16px #ddbce5;
+}
+input,textarea{
+    padding-top: 1vh;
+    padding-left: 2vw;
+    display: block;
+    margin: 1.5rem;
+    margin-right: 0;
+    margin-left: 5vw;
+    background: transparent;
+    border-radius: 5vh;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 8px #ddbce5 inset,
+    -5px -5px 8px #000 inset;
+    color: aliceblue;
+    
+}
+input::placeholder,textarea::placeholder{
+    padding-left: 2vw;
+    padding-top: 2vh;
+    color: aliceblue;
+}
+input[type="submit"]{
+    padding: 0;
+    width:8rem;
+    color: aliceblue;
+    background-color: rgb(250, 2, 23);
+}
+input
+{
+    height: 6.5vh;
+    width: 20rem;
+}
+.contact-details{
+    width: 50%;
+    height: 92vh;
+    background: #6a0883;
+    display: flex;
+    justify-content: space-around;
+    padding: 10vw;
+    flex-direction: column;
+    padding-top: 8vh;
+}
+.card{
+    width: 100%;
+    height: 10vh;
+    padding: 2vh;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 8px #000,
+    -5px -5px 8px #fff;
+}
+.fas{
+    font-size: 26px;
+}
+.fab{
+    font-size: 28px;
+}
+@media screen and (max-width: 1024px),@media screen and (max-width:768px){
+    .contact-container{
+        display:block;
+    }
+.form-group{
+    width: 100%;
+}
+input,textarea{
+    padding: 0;
+    width: 12rem;
+}
+.contact-details{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    
+
+}
+.card{
+    
+    padding-left: 1.5vh;
+}
+}
