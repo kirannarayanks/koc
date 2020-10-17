@@ -18,10 +18,10 @@
         <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase.js"></script>
     <style>
       body{
-        background-color: bisque;
+        background-color: #fc7405;
       }
         form {
-  border: 3px solid #f1f1f1;
+  border: 3px solid #c2bfbf;
 }
 
 /* Full-width inputs */
@@ -30,26 +30,37 @@ input[type=text], input[type=password] {
   padding: 12px 20px;
   margin: 8px 0;
   display: flex;
+  background-color: #fc7005;
   /*border-bottom: 1px solid #ccc;*/
   border: none;
+  border-radius: 20px;
   box-sizing: border-box;
-  box-shadow: rgb(102, 101, 101) ;
+  box-shadow: 5px 5px 8px  #222,
+  -5px -5px 8px #ddd;
   
+}
+input[type=text]::placeholder, input[type=password]::placeholder{
+  color: white;
 }
 
 /* Set a style for all buttons */
-button {
-  background-color: rgb(223, 165, 41);
+.login button {
+  background-color: rgb(184, 10, 253);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 8px  #222,
+  -5px -5px 8px #ddd;
 }
 
 /* Add a hover effect for buttons */
 button:hover {
+  transition: all 1s cubic-bezier(0.39, 0.575, 0.565, 1);
   opacity: 0.8;
 }
 
@@ -113,7 +124,7 @@ span.psw {
                     <div class="dropdown-content">
                       <a href="http://register.vyakochi.in">Registration</a>
                       <a href="#">Schedule</a>
-                      <a href="#">Results</a>
+                      <a href="#">Rules</a>
                     </div>
                   </div>
                 </li>
