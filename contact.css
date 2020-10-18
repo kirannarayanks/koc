@@ -32,7 +32,7 @@ input[type="text"],input[type="email"],input[type="tel"],textarea{
     display: block;
     margin: 1.5rem;
     margin-right: 0;
-    margin-left: 5vw;
+    margin-left: 0vw;
     background: transparent;
     border-radius: 5vh;
     box-sizing: border-box;
@@ -93,6 +93,9 @@ input
 .form-group{
     width: 100%;
 }
+form{
+    width:90%;
+    }
 input[type="text"],input[type="email"],input[type="tel"],textarea{
     padding: 0;
     width: 12rem;
