@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@200&display=swap');
 *
 {
     margin: 0;
     padding-top: 0;
     box-sizing: border-box;
-    font-family: 'MuseoModerno', cursive;
+    font-family: 'Texturina', serif;
     
 }
 .preloader
@@ -11,7 +12,7 @@
     margin: 0;
     padding: 15em;
     padding-left: 36em;
-    background: rgb(0, 0, 0);
+    background: #134074;
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -22,7 +23,7 @@
   color: #ff3300;
   text-align: center;
   padding-top: 2rem;
-    border: 16px solid rgb(0, 0, 0);
+    border: 16px solid #134074;
   border-bottom: 16px solid #ff3300;
   border-top: 16px solid #ff3300;
   border-radius: 50%;
@@ -48,8 +49,7 @@ nav
     align-items: center;
     width: 100%;
     height: 8vh;
-    background-color: #ff7300;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #134074;
     z-index: 1;
     position: fixed;
     padding-left: 1em;
@@ -57,7 +57,7 @@ nav
 }
 .logo
 {
-    color: rgb(255, 255, 255);
+    color: #ff2e00;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 22px;
@@ -70,9 +70,10 @@ nav
 .logo a
 {
   text-decoration: none;
-  color: white;
+  color: #fff;
   margin-top: 1.5vh;
   text-align: center;
+  font-family: 'Texturina', serif;
 
 }
 .logo img
@@ -103,6 +104,7 @@ nav
     font-weight: bold;
     font-size: 17px;
     position: relative;
+    font-family: 'Texturina', serif;
 }
 .nav-links a::after
 {
@@ -115,7 +117,7 @@ nav
   transform: scaleX(0);
   transition: transform 0.4s ease;
   transform-origin: bottom right;
-  background-color: #fff;
+  background-color: #ff2e00;
 
 }
 .nav-links a:hover::after
@@ -144,11 +146,13 @@ nav
     max-width: 100%;
     position: relative;
     margin: auto;
+    transition: all 0.5s ease-in-out;
   }
   
   /* Hide the images by default */
   .mySlides {
     display: none;
+    transition: cubic-bezier(0.23, 1, 0.320, 1) all 0.5s;
   }
   
   /* Next & previous buttons */
@@ -159,7 +163,8 @@ nav
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color:#ff2e00;
+    display: none;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -231,24 +236,7 @@ nav
     from {opacity: .4}
     to {opacity: 1}
   }
-.about
-{
-  
-    text-align: center;
-    padding-top: 8vh;
-    width: 100%;
-    height: 50vh;
-    background-color: antiquewhite;
-}
-.about h2
-{
-    padding: 0.5em;
-    color: #ff7300;
-}
-.about p{
-  padding-left: 2em;
-  padding-right:2em ;
-}
+
 /*gallery*/
 /* Position the image container (needed to position the left and right arrows) */
 .gallery {
@@ -336,88 +324,3 @@ nav
 /*end of gallery*/
 
 /*contact form*/
-.contact
-{
-  position: absolute;
-  margin-top: 8vh;
-  background-color: rgb(0, 0, 0);
-  width: 100%;
-  height: 150vh;
-  color: #fff;
-  text-align: center;
-  
-}
-.contact form,.contact input{
-  width: 50%;
-  text-align: center;
-  color: #ff7300;
-  background: transparent;
-}
-.contact input[type=text],input[type=email],input[type=tel], textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-  background: transparent;
-  color: #ccc;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-}
-
-input[type=submit]:hover {
-  background-color: #e65319;
-}
-
-/* Style the container/contact section */
-/*.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 10px;
-}*/
-
-.row{
-  display: inline-block;
-}
-.details
-{padding-top: 0em;
-  width:100%;
-  
-  text-align: left;
-  
-
-}
-/* Create two columns that float next to eachother */
-.column {
-  
-  width: 100%;
-  margin-top: 6px;
-  padding: 20px;
-  border: 1px solid white;
-  display: flex;
-  justify-content: center;
- 
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}

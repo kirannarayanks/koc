@@ -12,6 +12,10 @@
     {
         margin: 0;
     }
+    .logo img{
+        width:1.8em;
+        height:1.8em;
+    }
 }
 @media screen and (max-width:768px)
 {
@@ -34,7 +38,7 @@
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #ff7300;
+        background-color: #134074;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -60,15 +64,6 @@
     {
         height: 100vh;
     }
-    .contact form
-    {
-        width: 100%;
-        margin-left: 0em;
-        height: 110vh;
-    }
-    .contact{
-        height:200vh
-    }
     .details
     {
         padding:0em;
@@ -93,7 +88,7 @@
 }
 .toggle .line1
 {
-    background-color: rgb(87, 3, 3);
+    background-color: #ff2e00;
     transform: rotate(-45deg) translate(-5px,9px);
 
 }
@@ -104,7 +99,7 @@
 }
 .toggle .line3
 {
-    background-color: rgb(85, 14, 28);
+    background-color: #ff2e00;
     transform: rotate(45deg) translate(-5px,-9px);
 
 }

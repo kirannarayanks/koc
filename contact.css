@@ -26,20 +26,19 @@ form{
     box-shadow: 5px 5px 16px #000,
     -5px -5px 16px #ddbce5;
 }
-input[type="text"],input[type="email"],input[type="tel"],textarea{
+input,textarea{
     padding-top: 1vh;
     padding-left: 2vw;
     display: block;
     margin: 1.5rem;
     margin-right: 0;
-    margin-left: 0vw;
+    margin-left: 5vw;
     background: transparent;
     border-radius: 5vh;
     box-sizing: border-box;
     box-shadow: 5px 5px 8px #ddbce5 inset,
     -5px -5px 8px #000 inset;
     color: aliceblue;
-    width:20rem;
     
 }
 input::placeholder,textarea::placeholder{
@@ -94,10 +93,7 @@ input
 .form-group{
     width: 100%;
 }
-form{
-    width:90%;
-    }
-input[type="text"],input[type="email"],input[type="tel"],textarea{
+input,textarea{
     padding: 0;
     width: 12rem;
 }
