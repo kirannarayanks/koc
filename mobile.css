@@ -60,6 +60,9 @@
         display: block;
         cursor: pointer;
     }
+    .mySlides img{
+        max-height: 100px;
+    }
     .about
     {
         height: 100vh;
