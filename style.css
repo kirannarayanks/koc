@@ -362,21 +362,24 @@ nav
 {
   font-family: 'Texturina', serif;
 }
-.upcoming-events .marquee
+.upcoming-events .events
 {position: relative;
   height: 80%;
   width: 100%;
+  padding-left: 30px;
 }
-.upcoming-events .marquee marquee{
+.upcoming-events .events ol{
 position: relative;
 height: 100%;
 width: 100%;
 display: flex;
-justify-content: center;
-font-family: Georgia, 'Times New Roman', Times, serif;
+flex-direction: column;
 color: rgb(194, 21, 21) ;
 font-size: 20px;
-font-style: italic;
+
+}
+.upcoming-events .events ol li{
+  font-family: 'Texturina', serif;
 }
 
   /* end of social section */
