@@ -1,6 +1,7 @@
 .contact-container{
     width: 100%;
     height: auto;
+    background-image: linear-gradient(to right, #ff0084,#33001b, #000 );
     padding-top: 8vh;
     position: relative;
     display: flex;
@@ -9,9 +10,11 @@
 .form-group{
     width: 50%;
     height: 92vh;
-    background: #6a0883;
+    background: transparent;
     display: flex;
     justify-content: center;
+    align-content: center;
+    align-items: center;
     position: relative;
 
 }
@@ -19,12 +22,14 @@ form{
     margin-top: 4vh;
     padding-left: 2vw;
     width: 70%;
-    height: 85vh;
+    height: auto;
+    background: #fff5;
+    backdrop-filter: blur(10px);
     position: absolute;
-    border-radius: 30px;
+    border-radius: 20px;
     box-sizing: border-box;
-    box-shadow: 5px 5px 16px #000,
-    -5px -5px 16px #ddbce5;
+    box-shadow: 5px 5px 2px #000,
+    inset 5px 5px 2px #ddbce5;
 }
 input,textarea{
     padding-top: 1vh;
@@ -34,16 +39,16 @@ input,textarea{
     margin-right: 0;
     margin-left: 5vw;
     background: transparent;
-    border-radius: 5vh;
+    border: 0px;
+    border-bottom: 1px solid #000;
     box-sizing: border-box;
-    box-shadow: 5px 5px 8px #ddbce5 inset,
-    -5px -5px 8px #000 inset;
+    
     color: aliceblue;
     
 }
 input::placeholder,textarea::placeholder{
-    padding-left: 2vw;
-    padding-top: 2vh;
+    padding-left: 0;
+    padding-top: 0;
     color: aliceblue;
 }
 input[type="submit"]{
@@ -60,7 +65,7 @@ input
 .contact-details{
     width: 50%;
     height: 92vh;
-    background: #6a0883;
+    background: transparent;
     display: flex;
     justify-content: space-around;
     padding: 10vw;
@@ -72,6 +77,8 @@ input
     height: 10vh;
     padding: 2vh;
     color: aliceblue;
+    background: #fff5;
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -86,12 +93,17 @@ input
 .fab{
     font-size: 28px;
 }
-@media screen and (max-width: 1024px),@media screen and (max-width:768px){
+@media screen and (max-width: 1024px), @media screen and (max-width:768px){
     .contact-container{
         display:block;
     }
 .form-group{
     width: 100%;
+    height: 80vh;
+}
+form
+{
+    height: auto;
 }
 input,textarea{
     padding: 0;
@@ -107,5 +119,9 @@ input,textarea{
 .card{
     
     padding-left: 1.5vh;
+}
+.fab
+{
+    font-size: 20px;
 }
 }

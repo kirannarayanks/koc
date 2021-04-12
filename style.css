@@ -142,10 +142,11 @@ nav
 /*image carousel*/
 .slideshow-container {
     padding-top: 8vh;
-    background-color: #134074;
+    background:linear-gradient(to right,#134074d7,#234bcd9d,#03ddfcb9);
+    filter: blur(0px);
     max-width: 100%;
     position: relative;
-    margin: auto;
+    margin: 0;
     transition: all 0.5s ease-in-out;
   }
   
@@ -299,6 +300,11 @@ nav
   padding: 2px 16px;
   color: white;
 }
+.gal{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
 
 .gal:after {
   content: "";
@@ -310,6 +316,8 @@ nav
 .img {
   float: left;
   width: 16.66%;
+  max-height: 50%;
+  
 }
 
 /* Add a transparency effect for thumnbail images */
@@ -326,7 +334,9 @@ nav
 /*social cards*/
 .social-card
 {
-  background:linear-gradient(to bottom left,#134074,#114d93,#00ff88);
+  background:linear-gradient(to bottom right,#134074,#234bcd,#03ddfc);
+  background-attachment: fixed;
+  background-size: 100%;
   width: 100%;
   height: 50vh;
   display: flex;
@@ -340,11 +350,12 @@ nav
   position: relative;
   height: 90%;
   width: 20%;
-  background-color: #fff6;
+  background-color: #fff5;
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow:hidden ;
+  
   
 }
 .upcoming-events .head

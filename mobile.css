@@ -38,7 +38,8 @@
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #134074;
+        background-color: #134074c4;
+        backdrop-filter: blur(10px);
         display: flex;
         flex-direction: column;
         align-items: center;
