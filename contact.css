@@ -60,7 +60,7 @@ input[type="submit"]{
     border-radius: 10px;
     color: #fff;
     font-weight: 10000;
-    background-color: #0e539c;;
+    background-color: #0e539c;
     backdrop-filter: blur(5px);
     text-transform: capitalize;
 }
@@ -100,7 +100,7 @@ input
 .fab{
     font-size: 28px;
 }
-@media screen and (max-width: 1024px), @media screen and (max-width:768px){
+@media screen and (max-width: 1024px), screen and (max-width:768px){
     .contact-container{
         display:block;
     }

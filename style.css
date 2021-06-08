@@ -97,7 +97,7 @@ nav
     list-style: none;
 
 }
-.nav-links .active
+.nav-links .active,.nav-links .active i .fas
 {
   color:  rgb(252, 65, 8);
     text-decoration: none;
