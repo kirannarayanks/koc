@@ -167,6 +167,7 @@ nav
   .mySlides {
     display: none;
     transition: cubic-bezier(0.23, 1, 0.320, 1) all 0.5s;
+      animation: fade 1.5s ;
   }
   
   /* Next & previous buttons */
