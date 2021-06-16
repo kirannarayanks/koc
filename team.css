@@ -49,7 +49,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
       border-top-left-radius:10px;
       border-top-right-radius:  10px;
   }
-@media screen and (max-width:768px),  screen and (max-width:1028px) 
+  @media screen and (max-width:768px),  screen and (max-width:1028px) 
   {
     .row
     {
