@@ -6,6 +6,7 @@
     padding-top: 0;
     box-sizing: border-box;
     font-family: 'Texturina', serif;
+    transition: all 1s ease-in-out;
     
 }
 .preloader

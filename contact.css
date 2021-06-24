@@ -1,7 +1,8 @@
 .contact-container{
     width: 100%;
     height: auto;
-    background-color:#134070;
+    background:linear-gradient(to left,#1CB5E0,#000046);
+    background-attachment: fixed;
     padding-top: 8vh;
     position: relative;
     display: flex;
@@ -29,8 +30,8 @@ form{
     position: absolute;
     border-radius: 20px;
     box-sizing: border-box;
-    box-shadow: 5px 5px 2px #000,
-    inset 5px 5px 2px #ffffff;
+    box-shadow: 2px 2px 2px 2px #2e493c,
+    inset 2px 2px 2px 2px #a9d4ff;
 }
 input,textarea{
     padding-top: 1vh;
@@ -63,6 +64,11 @@ input[type="submit"]{
     background-color: #0e539c;
     backdrop-filter: blur(5px);
     text-transform: capitalize;
+    transition: all 1s ease-in-out;
+}
+input[type="submit"]:hover{
+    background-color: #1c9ec2;
+    color: #000046;
 }
 input
 {
@@ -91,8 +97,8 @@ input
     flex-direction: row;
     border-radius: 30px;
     box-sizing: border-box;
-    box-shadow: 4px 2px 2px #000,
-    -4px -2px 2px #fff;
+    box-shadow: 2px 2px 2px #000,
+    inset 2px 2px 2px #fff;
 }
 .fas{
     font-size: 26px;
