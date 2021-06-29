@@ -55,7 +55,9 @@
     {
         color:rgb(250, 248, 246) ;
     }
-    
+    .social{
+        margin-bottom: 1em;
+    }
     .burger
     {
         display: block;
